@@ -7,5 +7,7 @@ void main()
 	int *p;
 	p = Buff;
 
+	//Acceder a los elementos mediante notación subindexada
+	hghghgh
 
-}@
+}

@@ -1,0 +1,2 @@
+No, no se puede ver el archivo tp2_1_2.cpp
+Porque git muestra los archivos dependiendo de la rama en la que se esta trabajando.

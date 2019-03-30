@@ -9,13 +9,13 @@ int main()
 	double mt [N] [M], *P;
 	//double num;
 	//num = rand() % (15-5+1);
-	P = &mt[0][0];
+	P = &mt[0][0]; //Puntero
 
 	for (f = 0; f < N; ++f)
 	{
 		for (c = 0; c < M; ++c)
 		{
-			mt [f] [c]  = rand() % (15-5+1);
+			*(P + (f * M + c))  = rand() % (15-5+1);
 		}
 		printf("\n");
 	}
@@ -25,7 +25,7 @@ int main()
 	{
 		for (c = 0; c < M; ++c)
 		{
-			printf("%lf  ", mt [f] [c]);
+			printf("%.2lf  ", *(P + (f * M + c)));
 		}
 		printf("\n");
 	}

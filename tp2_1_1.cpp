@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N  4
-#define M  5
+#define N 4
+#define M 5
+
 
 int main()
 {
 	int f,c;
 	double mt [N] [M];
 	//double num;
-	//num = rand() % (15-5+1);
+	//num = rand() % 11 + 5;
 
 	for (f = 0; f < N; ++f)
 	{
@@ -24,7 +25,7 @@ int main()
 	{
 		for (c = 0; c < M; ++c)
 		{
-			printf("%lf  ", mt [f] [c]);
+			printf("%.2lf  ", mt [f] [c]);
 		}
 		printf("\n");
 	}
